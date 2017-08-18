@@ -65,5 +65,9 @@ namespace WebApplication1.Controllers
             return RedirectToAction("ListPersons");
 
         }
+        public ActionResult CheckingCommit()
+        {
+            return View();
+        }
     }
 }
