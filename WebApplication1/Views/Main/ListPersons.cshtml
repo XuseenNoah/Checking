@@ -11,6 +11,13 @@
 {
     <h3 class="alert alert-success">@TempData["Succesdel"]</h3>
 }
+@if (TempData["succes"] != null)
+{
+
+    <h3 class="alert alert-success">
+        @TempData["succes"]
+    </h3>
+}
 <h2>ListPersons</h2>
 
 <p>

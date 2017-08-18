@@ -29,6 +29,7 @@ namespace WebApplication1.Controllers
                 _repository.CreatePerson(cus);
                 TempData["succes"] = "Succesfully saved";
                 ModelState.Clear();
+                return RedirectToAction("ListPersons");
             }
             return View();
         }
